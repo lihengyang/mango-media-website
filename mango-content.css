@@ -1,0 +1,126 @@
+/* Mango Media content structure */
+.centered-home {
+  max-width: 780px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.capability-card,
+.detail-card,
+.detail-panel {
+  border: 1px solid rgba(9, 9, 9, 0.08);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 26px;
+}
+
+.capability-card {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.capability-card h3,
+.detail-card h3,
+.detail-panel h3 {
+  margin: 0 0 12px;
+  font-size: clamp(18px, 1.6vw, 24px);
+  font-weight: 360;
+  line-height: 1.18;
+  letter-spacing: -0.032em;
+}
+
+.capability-card p,
+.detail-card p,
+.detail-panel p,
+.detail-card li,
+.detail-panel li {
+  color: var(--muted, #77746d);
+  font-size: clamp(15px, 1.08vw, 17px);
+  font-weight: 360;
+  line-height: 1.55;
+  letter-spacing: -0.018em;
+}
+
+.card-link {
+  width: fit-content;
+  margin-top: auto;
+  border-radius: 999px;
+  padding: 10px 14px;
+  color: #090909;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(9, 9, 9, 0.06);
+  font-size: 14px;
+}
+
+.split-lite {
+  display: grid;
+  grid-template-columns: 0.9fr 0.8fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.subpage-hero .hero-inner {
+  padding: 72px 0 76px !important;
+}
+
+.subpage-hero h1 {
+  max-width: 860px !important;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.detail-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.detail-card ul,
+.detail-panel ul {
+  margin: 18px 0 0;
+  padding-left: 18px;
+}
+
+.detail-card li,
+.detail-panel li {
+  margin-bottom: 8px;
+}
+
+.detail-panel {
+  margin-top: 18px;
+}
+
+.back-link {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 24px;
+  border-radius: 999px;
+  padding: 10px 14px;
+  color: #090909;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 24px rgba(9, 9, 9, 0.06);
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .capability-grid,
+  .detail-grid,
+  .detail-grid.two,
+  .split-lite {
+    grid-template-columns: 1fr;
+  }
+
+  .capability-card {
+    min-height: auto;
+  }
+}
