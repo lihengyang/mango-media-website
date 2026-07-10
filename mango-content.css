@@ -241,15 +241,14 @@
   gap: clamp(32px, 6vw, 86px);
   align-items: center;
 }
-
 .production-intro-copy h1 {
   max-width: 760px;
   margin: 0 0 24px;
   color: #090909;
-  font-size: clamp(38px, 5.1vw, 72px);
+  font-size: clamp(34px, 4.6vw, 64px);
   font-weight: 360;
-  line-height: 1.04;
-  letter-spacing: -0.058em;
+  line-height: 1.06;
+  letter-spacing: -0.052em;
 }
 
 .production-intro-copy p:not(.eyebrow) {
