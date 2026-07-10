@@ -12,7 +12,7 @@
   <meta name="theme-color" content="#fbfaf7" />
   <link rel="stylesheet" href="./mango-soft-lsf-style-v5.css?v=20260709-v7" />
   <link rel="stylesheet" href="./mango-lsf-override.css?v=20260709-v1" />
-  <link rel="stylesheet" href="./mango-content.css?v=20260709-v2" />
+  <link rel="stylesheet" href="./mango-content.css?v=20260710-v4" />
 </head>
 <body>
   <header class="site-header">
@@ -104,18 +104,51 @@
       </div>
     </section>
 
-    <section class="section concise-workflow">
-      <div class="section-title split-lite">
+<section class="section media-system-section">
+  <div class="media-system-panel">
+    <div class="media-system-copy">
+      <p class="eyebrow">For teams building modern media</p>
+      <h2>Creative output needs a production system, not isolated tools</h2>
+      <p>
+        Mango Media connects creative direction, model-assisted iteration, and compute-backed production
+        into one practical workflow. Teams can move from campaign ideas to visual references, production-ready
+        assets, and scalable media output without separating creative work from technical execution.
+      </p>
+    </div>
+
+    <div class="media-system-stack" aria-label="Mango Media workflow">
+      <article class="media-system-item">
+        <span>01</span>
         <div>
-          <p class="eyebrow">For modern media teams</p>
-          <h2>Built for projects that need both creative execution and technical depth</h2>
+          <h3>Direction before generation</h3>
+          <p>
+            Every project starts with the story, audience, visual tone, format, and production goal.
+          </p>
         </div>
-        <p>
-          Mango Media can support brand campaigns, creator projects, AI product demos, model-driven content workflows,
-          and infrastructure-backed media generation. The work stays focused on one outcome: usable creative output.
-        </p>
-      </div>
-    </section>
+      </article>
+
+      <article class="media-system-item">
+        <span>02</span>
+        <div>
+          <h3>Models inside the creative loop</h3>
+          <p>
+            Open-source model workflows support reference building, concept testing, iteration, and review.
+          </p>
+        </div>
+      </article>
+
+      <article class="media-system-item">
+        <span>03</span>
+        <div>
+          <h3>Compute for real output</h3>
+          <p>
+            Hardware-backed processing supports inference, rendering, media generation, and delivery workflows.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
     <section id="contact" class="section final-cta">
       <div class="container">
@@ -168,3 +201,145 @@
   </script>
 </body>
 </html>
+/* Homepage media system section */
+.media-system-section {
+  padding-top: 72px !important;
+  padding-bottom: 72px !important;
+}
+
+.media-system-panel {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+
+  border: 1px solid rgba(9, 9, 9, 0.075);
+  border-radius: 34px;
+  padding: clamp(34px, 5vw, 64px);
+
+  background:
+    radial-gradient(circle at 12% 18%, rgba(49, 92, 255, 0.10), transparent 24rem),
+    radial-gradient(circle at 56% 22%, rgba(255, 205, 222, 0.12), transparent 26rem),
+    radial-gradient(circle at 92% 70%, rgba(232, 213, 180, 0.16), transparent 24rem),
+    linear-gradient(135deg, #ffffff 0%, #f8f7f3 54%, #f1efe8 100%);
+
+  box-shadow:
+    0 22px 70px rgba(9, 9, 9, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.media-system-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 26% 36%, rgba(180, 196, 255, 0.12), transparent 24rem),
+    radial-gradient(circle at 68% 28%, rgba(255, 218, 230, 0.10), transparent 24rem);
+  filter: blur(12px);
+  pointer-events: none;
+}
+
+.media-system-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.media-system-copy .eyebrow {
+  margin-bottom: 18px !important;
+}
+
+.media-system-copy h2 {
+  max-width: 720px;
+  margin: 0 0 24px;
+  font-size: clamp(34px, 4vw, 58px);
+  font-weight: 360;
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+
+.media-system-copy p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 0;
+  color: #77746d;
+  font-size: clamp(16px, 1.22vw, 20px);
+  font-weight: 360;
+  line-height: 1.58;
+  letter-spacing: -0.018em;
+}
+
+.media-system-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.media-system-item {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 20px;
+  align-items: start;
+
+  border: 1px solid rgba(9, 9, 9, 0.07);
+  border-radius: 24px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(18px);
+}
+
+.media-system-item span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+
+  color: #090909;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 24px rgba(9, 9, 9, 0.055);
+
+  font-size: 13px;
+  font-weight: 420;
+}
+
+.media-system-item h3 {
+  margin: 0 0 8px;
+  font-size: clamp(18px, 1.4vw, 23px);
+  font-weight: 380;
+  line-height: 1.2;
+  letter-spacing: -0.032em;
+}
+
+.media-system-item p {
+  margin: 0;
+  color: #77746d;
+  font-size: 15.5px;
+  font-weight: 360;
+  line-height: 1.55;
+  letter-spacing: -0.018em;
+}
+
+@media (max-width: 900px) {
+  .media-system-panel {
+    grid-template-columns: 1fr;
+    border-radius: 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  .media-system-section {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+
+  .media-system-panel {
+    padding: 28px 22px;
+  }
+
+  .media-system-item {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
