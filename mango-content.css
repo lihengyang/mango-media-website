@@ -229,10 +229,10 @@
 }
 /* Production page */
 
-.production-intro {
-  padding-top: 72px;
-  padding-bottom: 80px;
-  border-top: 0;
+.section.production-intro {
+  padding-top: 32px !important;
+  padding-bottom: 72px !important;
+  border-top: 0 !important;
 }
 
 .production-intro-grid {
