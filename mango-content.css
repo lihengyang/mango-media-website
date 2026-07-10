@@ -203,3 +203,111 @@
     justify-content: flex-start !important;
   }
 }
+/* Refine homepage CTA gradient block */
+.final-cta .cta-box {
+  position: relative !important;
+  overflow: hidden !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  grid-template-areas:
+    "title actions"
+    "copy actions" !important;
+  align-items: center !important;
+  gap: 14px 36px !important;
+
+  border: 1px solid rgba(9, 9, 9, 0.07) !important;
+  border-radius: 34px !important;
+
+  /* giảm bề dọc khung */
+  padding: clamp(30px, 4vw, 48px) clamp(30px, 5vw, 58px) !important;
+
+  /* màu loang nhạt hơn */
+  background:
+    radial-gradient(circle at 8% 28%, rgba(49, 92, 255, 0.11), transparent 28rem),
+    radial-gradient(circle at 48% 22%, rgba(255, 205, 222, 0.11), transparent 30rem),
+    radial-gradient(circle at 88% 44%, rgba(232, 213, 180, 0.16), transparent 26rem),
+    linear-gradient(135deg, #ffffff 0%, #f8f7f3 52%, #f1efe8 100%) !important;
+
+  box-shadow:
+    0 20px 60px rgba(9, 9, 9, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72) !important;
+}
+
+.final-cta .cta-box::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  background:
+    radial-gradient(circle at 24% 34%, rgba(180, 196, 255, 0.12), transparent 24rem),
+    radial-gradient(circle at 66% 28%, rgba(255, 218, 230, 0.10), transparent 24rem) !important;
+  filter: blur(12px) !important;
+  pointer-events: none !important;
+}
+
+.final-cta .cta-box > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.final-cta .cta-box h2 {
+  grid-area: title !important;
+  max-width: 760px !important;
+  margin: 0 !important;
+  font-size: clamp(28px, 2.7vw, 42px) !important;
+  font-weight: 360 !important;
+  line-height: 1.14 !important;
+  letter-spacing: -0.045em !important;
+}
+
+.final-cta .cta-box p {
+  grid-area: copy !important;
+  max-width: 760px !important;
+  margin: 0 !important;
+  color: #77746d !important;
+  font-size: clamp(16px, 1.15vw, 18px) !important;
+  line-height: 1.55 !important;
+  letter-spacing: -0.018em !important;
+}
+
+.final-cta .cta-box .hero-actions {
+  grid-area: actions !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 900px) {
+  .final-cta .cta-box {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "title"
+      "copy"
+      "actions" !important;
+    gap: 18px !important;
+  }
+
+  .final-cta .cta-box .hero-actions {
+    justify-content: flex-start !important;
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .final-cta .cta-box {
+    border-radius: 28px !important;
+    padding: 28px 22px !important;
+  }
+
+  .final-cta .cta-box .hero-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .final-cta .cta-box .hero-actions a {
+    width: 100% !important;
+  }
+}
