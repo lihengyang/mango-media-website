@@ -4,4 +4,20 @@
     <loc>https://mangomedia.live/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://mangomedia.live/production.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mangomedia.live/models.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mangomedia.live/compute.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mangomedia.live/about.html</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
