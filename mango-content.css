@@ -246,10 +246,10 @@
   max-width: 760px;
   margin: 0 0 24px;
   color: #090909;
-  font-size: clamp(44px, 5.8vw, 82px);
+  font-size: clamp(38px, 5.1vw, 72px);
   font-weight: 360;
-  line-height: 1.02;
-  letter-spacing: -0.066em;
+  line-height: 1.04;
+  letter-spacing: -0.058em;
 }
 
 .production-intro-copy p:not(.eyebrow) {
@@ -262,9 +262,10 @@
   letter-spacing: -0.018em;
 }
 
-.production-actions {
-  justify-content: flex-start;
-  margin-top: 32px;
+.production-intro .hero-actions.production-actions {
+  justify-content: flex-start !important;
+  margin-top: 48px !important;
+  margin-bottom: 0 !important;
 }
 
 .production-workspace {
