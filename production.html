@@ -21,7 +21,7 @@
 
   <link rel="stylesheet" href="./mango-soft-lsf-style-v5.css?v=20260709-v7" />
   <link rel="stylesheet" href="./mango-lsf-override.css?v=20260709-v1" />
-  <link rel="stylesheet" href="./mango-content.css?v=20260710-production4" />
+  <link rel="stylesheet" href="./mango-content.css?v=20260710-production-demo1" />
 </head>
 
 <body>
@@ -297,8 +297,30 @@
 
   <a class="back-top" href="#top" aria-label="Back to top">↑</a>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const demoVideo = document.getElementById("productionDemoVideo");
+  const demoTitle = document.getElementById("productionDemoTitle");
+  const demoCopy = document.getElementById("productionDemoCopy");
+  const demoThumbs = document.querySelectorAll(".production-demo-thumb");
+
+  demoThumbs.forEach((thumb) => {
+    thumb.addEventListener("click", () => {
+      demoThumbs.forEach((item) => item.classList.remove("active"));
+      thumb.classList.add("active");
+
+      demoVideo.pause();
+      demoVideo.src = thumb.dataset.video;
+      demoVideo.poster = thumb.dataset.poster;
+      demoVideo.load();
+
+      demoVideo.play().catch(() => {
+        // Some browsers may block autoplay after switching video.
+      });
+
+      demoTitle.textContent = thumb.dataset.title;
+      demoCopy.textContent = thumb.dataset.copy;
+    });
+  });
+</script>
