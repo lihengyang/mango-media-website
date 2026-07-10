@@ -1,9 +1,498 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Production | Mango Media</title>
-  <meta name="description" content="Mango Media connects cinematic video production with AI-assisted workflows and compute-backed media delivery.">
+  <meta
+    name="description"
+    content="Mango Media connects video production, AI-assisted creative workflows, and compute-backed media delivery."
+  />
+
   <style>
-    :root{--paper:#f7f6f2;--ink:#090909;--muted:#77746d;--line:
+    :root {
+      --paper: #f7f6f2;
+      --white: #ffffff;
+      --ink: #090909;
+      --muted: #77746d;
+      --line: rgba(9, 9, 9, 0.08);
+      --shadow: 0 20px 70px rgba(9, 9, 9, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background: var(--paper);
+      color: var(--ink);
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1400px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 28px;
+      width: min(1400px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 22px 0;
+      background: rgba(247, 246, 242, 0.86);
+      backdrop-filter: blur(20px);
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: 760;
+      letter-spacing: -0.065em;
+      white-space: nowrap;
+    }
+
+    .nav-links,
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-links {
+      justify-content: center;
+    }
+
+    .nav-links a,
+    .button {
+      border-radius: 999px;
+      padding: 11px 17px;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: -0.012em;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background: rgba(9, 9, 9, 0.055);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 20px;
+    }
+
+    .button-light {
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 8px 22px rgba(9, 9, 9, 0.07);
+    }
+
+    .button-dark {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .hero {
+      position: relative;
+      overflow: visible;
+      isolation: isolate;
+      padding: 92px 0 64px;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      z-index: -2;
+      width: 100vw;
+      transform: translateX(-50%);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(49, 92, 255, 0.13), transparent 24rem),
+        radial-gradient(circle at 58% 18%, rgba(255, 205, 222, 0.18), transparent 24rem),
+        radial-gradient(circle at 92% 58%, rgba(232, 213, 180, 0.22), transparent 22rem),
+        linear-gradient(135deg, #ffffff 0%, #f7f6f2 48%, #efede5 100%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+      width: 100vw;
+      transform: translateX(-50%);
+      background:
+        radial-gradient(circle at 30% 34%, rgba(180, 196, 255, 0.22), transparent 22rem),
+        radial-gradient(circle at 66% 28%, rgba(255, 218, 230, 0.18), transparent 22rem);
+      filter: blur(10px);
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 360;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      max-width: 860px;
+      margin: 0 auto 24px;
+      font-size: clamp(36px, 5vw, 68px);
+      font-weight: 400;
+      line-height: 1.06;
+      letter-spacing: -0.054em;
+    }
+
+    .lead {
+      max-width: 760px;
+      margin: 0 auto 34px;
+      color: var(--muted);
+      font-size: clamp(17px, 1.35vw, 21px);
+      font-weight: 360;
+      line-height: 1.52;
+      letter-spacing: -0.018em;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .section {
+      width: min(1400px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 96px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: 0.95fr 0.75fr;
+      gap: 56px;
+      margin-bottom: 42px;
+      align-items: start;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(26px, 3vw, 44px);
+      font-weight: 360;
+      line-height: 1.14;
+      letter-spacing: -0.04em;
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(16px, 1.18vw, 19px);
+      font-weight: 360;
+      line-height: 1.58;
+      letter-spacing: -0.018em;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      min-height: 260px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: var(--shadow);
+    }
+
+    .card span {
+      display: block;
+      margin-bottom: 54px;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: 0.02em;
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: clamp(19px, 1.5vw, 24px);
+      font-weight: 360;
+      line-height: 1.2;
+      letter-spacing: -0.032em;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      font-weight: 360;
+      line-height: 1.6;
+      letter-spacing: -0.018em;
+    }
+
+    .wide-panel {
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: clamp(28px, 4vw, 48px);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(49, 92, 255, 0.12), transparent 24rem),
+        radial-gradient(circle at 72% 18%, rgba(255, 205, 222, 0.14), transparent 22rem),
+        rgba(255, 255, 255, 0.72);
+      box-shadow: var(--shadow);
+    }
+
+    .wide-panel h2 {
+      max-width: 760px;
+      margin: 0 0 16px;
+      font-size: clamp(26px, 3vw, 42px);
+      font-weight: 360;
+      line-height: 1.14;
+      letter-spacing: -0.04em;
+    }
+
+    .wide-panel p {
+      max-width: 820px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.58;
+      letter-spacing: -0.018em;
+    }
+
+    .site-footer {
+      width: min(1400px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 54px 0 44px;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 32px;
+    }
+
+    .footer-grid strong {
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 400;
+    }
+
+    .footer-grid a,
+    .footer-grid p,
+    .footer-grid span {
+      display: block;
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .footer-grid .brand {
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .site-nav {
+        grid-template-columns: 1fr auto;
+        row-gap: 12px;
+      }
+
+      .nav-links {
+        grid-column: 1 / -1;
+        justify-content: flex-start;
+        overflow-x: auto;
+      }
+
+      .section-heading,
+      .card-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container,
+      .section,
+      .site-nav,
+      .site-footer {
+        width: min(100% - 24px, 1400px);
+      }
+
+      .hero {
+        padding: 64px 0 46px;
+      }
+
+      h1 {
+        font-size: clamp(34px, 11vw, 48px);
+      }
+
+      .nav-actions .button-light {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="site-nav">
+    <a class="brand" href="/">Mango Media</a>
+
+    <div class="nav-links">
+      <a class="active" href="/production.html">Production</a>
+      <a href="/models.html">Model Lab</a>
+      <a href="/compute.html">Compute</a>
+    </div>
+
+    <div class="nav-actions">
+      <a class="button button-light" href="mailto:mangomedia.ai@gmail.com">Contact</a>
+      <a class="button button-dark" href="mailto:mangomedia.ai@gmail.com">Start a project</a>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">Production</p>
+        <h1>Video production connected to AI workflows</h1>
+        <p class="lead">
+          Mango Media produces advertising videos, short films, music videos, and brand content as part of a
+          creative AI production pipeline that connects visual direction, model-assisted exploration, and final delivery.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-dark" href="mailto:mangomedia.ai@gmail.com">Discuss a project</a>
+          <a class="button button-light" href="/models.html">Explore Model Lab</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Production scope</p>
+          <h2>From creative concept to usable media output</h2>
+        </div>
+        <p>
+          We approach production as more than filming and editing. Each project can connect story, visual references,
+          AI-assisted concept development, post-production, and platform-ready delivery.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <span>01</span>
+          <h3>Advertising video</h3>
+          <p>
+            Campaign videos, product launches, brand stories, and short-form assets for digital marketing channels.
+          </p>
+        </article>
+
+        <article class="card">
+          <span>02</span>
+          <h3>Short film & story-led content</h3>
+          <p>
+            Cinematic concepts, narrative visuals, branded storytelling, and production support for creative projects.
+          </p>
+        </article>
+
+        <article class="card">
+          <span>03</span>
+          <h3>Music video & artist visuals</h3>
+          <p>
+            Visual concepts for artists, performance content, release assets, and promotional edits for music campaigns.
+          </p>
+        </article>
+      </div>
+
+      <div class="wide-panel">
+        <h2>Production designed for an AI media pipeline</h2>
+        <p>
+          Production work can connect directly with Mango Media’s model and compute capabilities. That means reference
+          generation, style exploration, AI-assisted iteration, rendering support, and delivery can be considered from
+          the beginning of the project instead of being treated as separate steps later.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wide-panel">
+        <h2>Start with a brief, a visual reference, or a production goal</h2>
+        <p>
+          Send us the project objective, target audience, format, reference style, timeline, and expected output.
+          We will help shape the right production path.
+        </p>
+
+        <div class="hero-actions" style="justify-content:flex-start;margin-top:28px">
+          <a class="button button-dark" href="mailto:mangomedia.ai@gmail.com">mangomedia.ai@gmail.com</a>
+          <a class="button button-light" href="/compute.html">Explore Compute</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/">Mango Media</a>
+        <p>Creative AI production infrastructure for video, models, and compute-backed media workflows.</p>
+      </div>
+
+      <div>
+        <strong>Explore</strong>
+        <a href="/production.html">Production</a>
+        <a href="/models.html">Model Lab</a>
+        <a href="/compute.html">Compute</a>
+      </div>
+
+      <div>
+        <strong>Company</strong>
+        <a href="/">Home</a>
+        <a href="mailto:mangomedia.ai@gmail.com">Contact</a>
+      </div>
+
+      <div>
+        <strong>Contact</strong>
+        <a href="mailto:mangomedia.ai@gmail.com">mangomedia.ai@gmail.com</a>
+        <span>© Mango Media</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
