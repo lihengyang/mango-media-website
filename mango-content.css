@@ -395,13 +395,13 @@
 }
 
 .production-demo-wrap {
-  width: min(1210px, calc(100% - 64px));
+  width: min(1340px, calc(100% - 56px));
   margin: 0 auto;
 }
 
 .production-demo-mosaic {
   display: grid !important;
-  grid-template-columns: 420px 320px 420px !important;
+  grid-template-columns: 470px 350px 470px !important;
   gap: 24px;
   justify-content: center;
   align-items: start;
@@ -444,12 +444,12 @@
 /* Exact desktop layout */
 
 .production-video-card.is-wide {
-  width: 420px;
+  width: 470px;
   aspect-ratio: 16 / 9;
 }
 
 .production-video-card.is-portrait {
-  width: 320px;
+  width: 350px;
   aspect-ratio: 9 / 16;
 }
 
@@ -469,7 +469,7 @@
 /* Video 03: right bottom, aligned with center card bottom */
 .production-demo-mosaic .production-video-card:nth-child(3) {
   justify-self: start;
-  margin-top: 333px;
+  margin-top: 358px;
 }
 
 /* Text inside video */
