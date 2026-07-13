@@ -455,6 +455,20 @@
   padding: 0 4px;
 }
 
+.showcase-right .production-showcase-caption {
+  margin-top: 0;
+  margin-bottom: 18px;
+  padding: 0 4px;
+}
+
+.showcase-right .production-showcase-caption h2 {
+  max-width: 440px;
+}
+
+.showcase-right .production-showcase-caption p {
+  max-width: 430px;
+}
+
 .production-showcase-caption h2 {
   max-width: 440px;
   margin: 0 0 8px;
