@@ -308,28 +308,4 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
-
-  const demoVideo = document.getElementById("productionDemoVideo");
-  const demoTitle = document.getElementById("productionDemoTitle");
-  const demoCopy = document.getElementById("productionDemoCopy");
-  const demoThumbs = document.querySelectorAll(".production-demo-thumb");
-
-  demoThumbs.forEach((thumb) => {
-    thumb.addEventListener("click", () => {
-      demoThumbs.forEach((item) => item.classList.remove("active"));
-      thumb.classList.add("active");
-
-      demoVideo.pause();
-      demoVideo.src = thumb.dataset.video;
-      demoVideo.poster = thumb.dataset.poster;
-      demoVideo.load();
-
-      demoVideo.play().catch(() => {
-        // Some browsers may block autoplay after switching video.
-      });
-
-      demoTitle.textContent = thumb.dataset.title;
-      demoCopy.textContent = thumb.dataset.copy;
-    });
-  });
 </script>
