@@ -430,6 +430,15 @@
     max-width: 760px;
   }
 }
+/* Production page section spacing */
+
+.section.production-capabilities {
+  padding-bottom: 36px !important;
+}
+
+.section.production-flow {
+  padding-top: 36px !important;
+}
 /* Production video showcase */
 
 .section.production-demo-section {
