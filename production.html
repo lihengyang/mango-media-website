@@ -21,7 +21,7 @@
 
   <link rel="stylesheet" href="./mango-soft-lsf-style-v5.css?v=20260709-v7" />
   <link rel="stylesheet" href="./mango-lsf-override.css?v=20260709-v1" />
-  <link rel="stylesheet" href="./mango-content.css?v=20260710-production-demo1" />
+  <link rel="stylesheet" href="./mango-content.css?v=20260710-production-mosaic1" />
 </head>
 
 <body>
@@ -99,65 +99,71 @@
       </div>
     </section>
 
-    <section class="section production-demo-section">
+<section class="section production-demo-section">
   <div class="production-demo-wrap">
-    <div class="production-demo-stage">
-      <video
-        id="productionDemoVideo"
-        src="/media/production/demo-01.mp4"
-        poster="/media/production/demo-01.jpg"
-        autoplay
-        muted
-        loop
-        playsinline
-        controls
-      ></video>
+    <div class="production-demo-mosaic" aria-label="Production video demos">
+      <article class="production-video-card is-wide">
+        <video
+          src="/media/production/demo-01.mp4"
+          poster="/media/production/demo-01.jpg"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        ></video>
 
-      <div class="production-demo-overlay">
-        <h2 id="productionDemoTitle">Commercial video direction</h2>
-        <p id="productionDemoCopy">
-          Brand and campaign videos shaped through creative direction, visual references,
-          production planning, and AI-assisted iteration.
-        </p>
-      </div>
+        <div class="production-video-content">
+          <span>Demo 01</span>
+          <h2>Commercial video direction</h2>
+          <p>
+            Brand and campaign videos shaped through creative direction,
+            visual references, and AI-assisted iteration.
+          </p>
+        </div>
+      </article>
 
-      <div class="production-demo-thumbs" aria-label="Production video demos">
-        <button
-          class="production-demo-thumb active"
-          type="button"
-          data-video="/media/production/demo-01.mp4"
-          data-poster="/media/production/demo-01.jpg"
-          data-title="Commercial video direction"
-          data-copy="Brand and campaign videos shaped through creative direction, visual references, production planning, and AI-assisted iteration."
-          aria-label="Show commercial video demo"
-        >
-          <img src="/media/production/demo-01.jpg" alt="Commercial video demo thumbnail" />
-        </button>
+      <article class="production-video-card is-portrait">
+        <video
+          src="/media/production/demo-02.mp4"
+          poster="/media/production/demo-02.jpg"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        ></video>
 
-        <button
-          class="production-demo-thumb"
-          type="button"
-          data-video="/media/production/demo-02.mp4"
-          data-poster="/media/production/demo-02.jpg"
-          data-title="Short film and story-led content"
-          data-copy="Narrative visuals, cinematic scenes, and story-led production workflows for creative and branded projects."
-          aria-label="Show short film demo"
-        >
-          <img src="/media/production/demo-02.jpg" alt="Short film demo thumbnail" />
-        </button>
+        <div class="production-video-content">
+          <span>Demo 02</span>
+          <h2>Short film and story-led content</h2>
+          <p>
+            Vertical-format narrative visuals, cinematic scenes, and story-led
+            production workflows.
+          </p>
+        </div>
+      </article>
 
-        <button
-          class="production-demo-thumb"
-          type="button"
-          data-video="/media/production/demo-03.mp4"
-          data-poster="/media/production/demo-03.jpg"
-          data-title="Music video and artist visuals"
-          data-copy="Artist visuals, performance content, release assets, and promotional edits for music campaigns."
-          aria-label="Show music video demo"
-        >
-          <img src="/media/production/demo-03.jpg" alt="Music video demo thumbnail" />
-        </button>
-      </div>
+      <article class="production-video-card is-wide">
+        <video
+          src="/media/production/demo-03.mp4"
+          poster="/media/production/demo-03.jpg"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        ></video>
+
+        <div class="production-video-content">
+          <span>Demo 03</span>
+          <h2>Music video and artist visuals</h2>
+          <p>
+            Artist visuals, performance content, release assets, and promotional
+            edits for music campaigns.
+          </p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
