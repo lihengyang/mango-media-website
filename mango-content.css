@@ -387,50 +387,42 @@
     grid-template-columns: 1fr;
   }
 }
-/* Production video gallery */
+/* Production video showcase */
 
 .section.production-demo-section {
   padding-top: 56px !important;
-  padding-bottom: 124px !important;
+  padding-bottom: 128px !important;
 }
 
 .production-demo-wrap {
-  width: min(1600px, calc(100% - 96px));
+  width: min(1540px, calc(100% - 80px));
   margin: 0 auto;
 }
 
-.production-gallery {
+.production-showcase {
   display: grid !important;
-  grid-template-columns: minmax(320px, 430px) minmax(520px, 660px) minmax(320px, 430px) !important;
-  gap: 24px;
+  grid-template-columns: 430px 600px 430px !important;
+  gap: 28px;
   justify-content: center;
   align-items: start;
 }
 
-.production-gallery-card {
+.production-showcase-item {
+  width: 100%;
+}
+
+.production-showcase-media {
   position: relative;
   overflow: hidden;
   width: 100%;
   aspect-ratio: 16 / 9;
   border: 1px solid rgba(9, 9, 9, 0.08);
-  border-radius: 30px;
+  border-radius: 28px;
   background: #111111;
-  box-shadow: 0 24px 74px rgba(9, 9, 9, 0.08);
+  box-shadow: 0 22px 66px rgba(9, 9, 9, 0.08);
 }
 
-.gallery-left {
-  margin-top: 48px;
-}
-
-.gallery-center {
-  margin-top: 0;
-}
-
-.gallery-right {
-  margin-top: 210px;
-}
-
-.production-gallery-card video {
+.production-showcase-media video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -439,76 +431,67 @@
   object-fit: cover;
 }
 
-.production-gallery-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.02) 0%,
-      rgba(0, 0, 0, 0.10) 42%,
-      rgba(0, 0, 0, 0.62) 100%
-    );
+.showcase-left {
+  margin-top: 72px;
 }
 
-.production-gallery-content {
-  position: absolute;
-  left: clamp(20px, 2vw, 32px);
-  right: clamp(20px, 2vw, 32px);
-  bottom: clamp(20px, 2vw, 32px);
-  z-index: 2;
-  color: #ffffff;
+.showcase-center {
+  margin-top: 0;
 }
 
-.production-gallery-content h2 {
+.showcase-right {
+  margin-top: 220px;
+}
+
+.production-showcase-caption {
+  margin-top: 18px;
+  padding: 0 4px;
+}
+
+.production-showcase-caption h2 {
   max-width: 520px;
-  margin: 0 0 10px;
-  color: #ffffff;
-  font-size: clamp(20px, 1.8vw, 30px);
+  margin: 0 0 8px;
+  color: #090909;
+  font-size: clamp(22px, 1.8vw, 30px);
   font-weight: 360;
   line-height: 1.12;
   letter-spacing: -0.045em;
 }
 
-.production-gallery-content p {
+.production-showcase-caption p {
   max-width: 520px;
   margin: 0;
-  color: rgba(255, 255, 255, 0.76);
-  font-size: clamp(13px, 0.95vw, 16px);
+  color: #77746d;
+  font-size: clamp(14px, 1vw, 16px);
   font-weight: 360;
-  line-height: 1.46;
+  line-height: 1.5;
   letter-spacing: -0.018em;
 }
 
-.gallery-left .production-gallery-content h2,
-.gallery-right .production-gallery-content h2 {
-  font-size: clamp(18px, 1.45vw, 24px);
+.showcase-center .production-showcase-caption h2 {
+  max-width: 560px;
 }
 
-.gallery-left .production-gallery-content p,
-.gallery-right .production-gallery-content p {
-  font-size: clamp(12px, 0.82vw, 14px);
+.showcase-center .production-showcase-caption p {
+  max-width: 560px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1320px) {
   .production-demo-wrap {
     width: min(100% - 56px, 1280px);
   }
 
-  .production-gallery {
-    grid-template-columns: minmax(280px, 370px) minmax(440px, 560px) minmax(280px, 370px) !important;
-    gap: 20px;
+  .production-showcase {
+    grid-template-columns: 360px 520px 360px !important;
+    gap: 22px;
   }
 
-  .gallery-left {
-    margin-top: 40px;
+  .showcase-left {
+    margin-top: 60px;
   }
 
-  .gallery-right {
-    margin-top: 178px;
+  .showcase-right {
+    margin-top: 190px;
   }
 }
 
@@ -517,19 +500,19 @@
     width: min(100% - 32px, 900px);
   }
 
-  .production-gallery {
+  .production-showcase {
     grid-template-columns: 1fr !important;
-    gap: 18px;
+    gap: 28px;
   }
 
-  .gallery-left,
-  .gallery-center,
-  .gallery-right {
+  .showcase-left,
+  .showcase-center,
+  .showcase-right {
     width: min(680px, 100%);
     margin: 0 auto;
   }
 
-  .production-gallery-card {
+  .production-showcase-media {
     aspect-ratio: 16 / 10;
     border-radius: 26px;
   }
