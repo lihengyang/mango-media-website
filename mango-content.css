@@ -449,6 +449,18 @@
 .showcase-right {
   margin-top: 360px;
 }
+.showcase-right {
+  position: relative;
+}
+
+.showcase-right .production-showcase-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(100% + 18px);
+  margin: 0;
+  padding: 0 4px;
+}
 
 .production-showcase-caption {
   margin-top: 18px;
@@ -499,6 +511,11 @@
     width: min(680px, 100%);
     margin: 0 auto;
   }
+  .showcase-right .production-showcase-caption {
+  position: static;
+  margin-top: 18px;
+  margin-bottom: 0;
+}
 
   .production-showcase-media.media-wide {
     aspect-ratio: 16 / 10;
