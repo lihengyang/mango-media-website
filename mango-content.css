@@ -390,14 +390,27 @@
 /* Production scope intro */
 
 .production-capabilities .section-title.split-lite {
-  grid-template-columns: minmax(0, 0.82fr) minmax(560px, 1fr);
-  gap: clamp(56px, 7vw, 110px);
+  width: min(1480px, calc(100% - 80px));
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+
+  grid-template-columns: minmax(0, 700px) minmax(0, 640px);
+  gap: clamp(72px, 6vw, 100px);
   align-items: start;
+}
+
+.production-capabilities .section-title.split-lite > div {
+  min-width: 0;
+}
+
+.production-capabilities .section-title.split-lite h2 {
+  max-width: 700px;
 }
 
 .production-capabilities .section-title.split-lite > p {
   width: 100%;
-  max-width: 780px;
+  max-width: 640px;
   margin-top: 4px;
   color: #77746d;
   font-size: clamp(17px, 1.25vw, 21px);
@@ -407,10 +420,12 @@
 
 @media (max-width: 900px) {
   .production-capabilities .section-title.split-lite {
+    width: min(100% - 32px, 1480px);
     grid-template-columns: 1fr;
     gap: 22px;
   }
 
+  .production-capabilities .section-title.split-lite h2,
   .production-capabilities .section-title.split-lite > p {
     max-width: 760px;
   }
