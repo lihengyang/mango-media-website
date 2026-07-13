@@ -395,14 +395,14 @@
 }
 
 .production-demo-wrap {
-  width: min(1340px, calc(100% - 56px));
+  width: min(1420px, calc(100% - 48px));
   margin: 0 auto;
 }
 
 .production-showcase {
   display: grid !important;
-  grid-template-columns: 470px 350px 470px !important;
-  gap: 24px;
+  grid-template-columns: 500px 380px 500px !important;
+  gap: 16px;
   justify-content: center;
   align-items: start;
 }
@@ -448,7 +448,7 @@
 
 .showcase-right {
   position: relative;
-  margin-top: 360px;
+  margin-top: 394px;
 }
 
 .production-showcase-caption {
