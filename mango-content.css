@@ -395,14 +395,14 @@
 }
 
 .production-demo-wrap {
-  width: min(1280px, calc(100% - 96px));
+  width: min(1220px, calc(100% - 112px));
   margin: 0 auto;
 }
 
 .production-demo-mosaic {
   display: grid !important;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.58fr) minmax(0, 1fr) !important;
-  gap: 28px;
+  grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.58fr) minmax(0, 0.95fr) !important;
+  gap: 24px;
   align-items: start;
 }
 
@@ -416,8 +416,11 @@
 }
 
 .production-video-card.is-wide {
+  width: 100%;
+  max-width: 500px;
   aspect-ratio: 16 / 9;
   min-height: 0;
+  justify-self: center;
 }
 
 .production-video-card.is-portrait {
@@ -429,17 +432,18 @@
 
 /* Left video: move up */
 .production-demo-mosaic .production-video-card:nth-child(1) {
-  margin-top: 72px;
+  margin-top: 36px;
 }
 
 /* Center portrait video */
 .production-demo-mosaic .production-video-card:nth-child(2) {
   margin-top: 0;
+  z-index: 2;
 }
 
 /* Right video: move down */
 .production-demo-mosaic .production-video-card:nth-child(3) {
-  margin-top: 180px;
+  margin-top: 300px;
 }
 
 .production-video-card video {
@@ -467,48 +471,48 @@
 
 .production-video-content {
   position: absolute;
-  left: clamp(20px, 2vw, 30px);
-  right: clamp(20px, 2vw, 30px);
-  bottom: clamp(20px, 2vw, 30px);
+  left: clamp(16px, 1.7vw, 24px);
+  right: clamp(16px, 1.7vw, 24px);
+  bottom: clamp(16px, 1.7vw, 24px);
   z-index: 2;
   color: #ffffff;
 }
 
 .production-video-content span {
   display: inline-flex;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   border-radius: 999px;
-  padding: 7px 11px;
+  padding: 5px 9px;
   color: rgba(255, 255, 255, 0.82);
   background: rgba(255, 255, 255, 0.14);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 420;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .production-video-content h2 {
-  max-width: 520px;
-  margin: 0 0 10px;
+  max-width: 440px;
+  margin: 0 0 8px;
   color: #ffffff;
-  font-size: clamp(20px, 1.75vw, 30px);
+  font-size: clamp(16px, 1.35vw, 24px);
   font-weight: 360;
-  line-height: 1.12;
-  letter-spacing: -0.045em;
+  line-height: 1.14;
+  letter-spacing: -0.038em;
 }
 
 .production-video-content p {
-  max-width: 520px;
+  max-width: 420px;
   margin: 0;
   color: rgba(255, 255, 255, 0.76);
-  font-size: clamp(13px, 0.95vw, 16px);
+  font-size: clamp(11.5px, 0.78vw, 13px);
   font-weight: 360;
-  line-height: 1.48;
-  letter-spacing: -0.018em;
+  line-height: 1.4;
+  letter-spacing: -0.014em;
 }
 
 .production-video-card.is-portrait .production-video-content h2 {
-  font-size: clamp(22px, 2vw, 30px);
+  font-size: clamp(17px, 1.55vw, 24px);
 }
 
 .production-video-card.is-portrait .production-video-content p {
@@ -525,13 +529,12 @@
     gap: 18px;
   }
 
-  .production-demo-mosaic .production-video-card:nth-child(1) {
-    margin-top: 56px;
-  }
+.production-demo-mosaic .production-video-card:nth-child(1) {
+  margin-top: 28px;
+}
 
-  .production-demo-mosaic .production-video-card:nth-child(3) {
-    margin-top: 140px;
-  }
+.production-demo-mosaic .production-video-card:nth-child(3) {
+  margin-top: 220px;
 }
 
 @media (max-width: 760px) {
