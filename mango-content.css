@@ -452,7 +452,7 @@
 }
 
 .production-showcase-caption {
-  margin-top: 18px;
+  margin-top: 28px;
   padding: 0 4px;
 }
 
@@ -482,12 +482,12 @@
 
 .showcase-right .production-showcase-caption {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
-
+  bottom: calc(100% + 28px);
   margin: 0;
   padding: 0 4px;
+}
 
   transform: translateY(calc(-100% - 18px));
 }
@@ -517,12 +517,11 @@
     margin: 0 auto;
   }
 
-  .showcase-right .production-showcase-caption {
-    position: static;
-    transform: none;
-    margin-top: 18px;
-    margin-bottom: 0;
-  }
+.showcase-right .production-showcase-caption {
+  position: static;
+  margin-top: 28px;
+  margin-bottom: 0;
+}
 
   .production-showcase-media.media-wide {
     aspect-ratio: 16 / 10;
