@@ -429,25 +429,26 @@
   place-items: center;
   overflow: hidden;
   background:
-    radial-gradient(circle at 70% 18%, rgba(120, 255, 130, 0.18), transparent 12rem),
-    #586458;
+    radial-gradient(circle at 72% 18%, rgba(124, 251, 111, 0.16), transparent 13rem),
+    radial-gradient(circle at 28% 80%, rgba(124, 251, 111, 0.08), transparent 12rem),
+    linear-gradient(135deg, #121812 0%, #293528 52%, #566353 100%);
 }
 
 .model-workload-visual.visual-dark {
   background:
-    radial-gradient(circle at 78% 28%, rgba(120, 255, 130, 0.18), transparent 13rem),
-    radial-gradient(circle at 34% 8%, rgba(120, 255, 130, 0.10), transparent 11rem),
-    #030403;
+    radial-gradient(circle at 72% 18%, rgba(124, 251, 111, 0.16), transparent 13rem),
+    radial-gradient(circle at 28% 80%, rgba(124, 251, 111, 0.08), transparent 12rem),
+    linear-gradient(135deg, #121812 0%, #293528 52%, #566353 100%);
 }
 
 .model-icon-cube {
   width: 86px;
   height: 86px;
-  border: 10px solid #78f66f;
+  border: 10px solid #7cfb6f;
   transform: rotate(45deg);
   box-shadow:
-    18px 18px 0 rgba(120, 246, 111, 0.26),
-    0 0 42px rgba(120, 246, 111, 0.28);
+    18px 18px 0 rgba(124, 251, 111, 0.22),
+    0 0 42px rgba(124, 251, 111, 0.24);
 }
 
 .model-icon-steps {
@@ -460,8 +461,8 @@
   display: block;
   width: 110px;
   height: 18px;
-  background: #9cff8d;
-  box-shadow: 0 10px 0 rgba(120, 246, 111, 0.35);
+  background: #7cfb6f;
+  box-shadow: 0 10px 0 rgba(124, 251, 111, 0.24);
 }
 
 .model-icon-steps span:nth-child(2) {
@@ -487,7 +488,7 @@
   left: 50%;
   width: 92px;
   height: 92px;
-  border: 9px solid #a4ff94;
+  border: 9px solid #7cfb6f;
   transform: translateX(-50%) rotate(45deg);
 }
 
