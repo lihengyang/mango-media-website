@@ -2034,6 +2034,42 @@
 .footer .footer-grid > div:first-child p {
   max-width: 420px;
 }
+/* Footer width and brand sizing */
+
+.footer .footer-grid {
+  width: min(1400px, calc(100vw - 48px));
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer .footer-logo {
+  font-size: clamp(22px, 1.8vw, 30px);
+  font-weight: 520;
+  letter-spacing: -0.045em;
+}
+
+.footer .footer-logo .logo-symbol {
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+}
+
+.footer .footer-grid > div:first-child p {
+  max-width: 420px;
+}
+
+@media (max-width: 900px) {
+  .footer .footer-grid {
+    width: min(100% - 28px, 1400px);
+  }
+
+  .footer .footer-logo {
+    font-size: 22px;
+  }
+}
 /* Homepage CTA wide override */
 
 .home-page-cta.final-cta {
