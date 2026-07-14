@@ -156,7 +156,7 @@
 }
 
 .media-system-copy {
-  max-width: 760px;
+  max-width: 820px;
 }
 
 .media-system-copy .eyebrow {
@@ -164,13 +164,13 @@
 }
 
 .media-system-copy h2 {
-  max-width: 760px;
+  max-width: 820px;
   margin: 0 0 24px;
   color: #090909;
-  font-size: clamp(30px, 3.2vw, 46px);
+  font-size: clamp(28px, 2.8vw, 40px);
   font-weight: 360;
-  line-height: 1.1;
-  letter-spacing: -0.048em;
+  line-height: 1.12;
+  letter-spacing: -0.044em;
 }
 
 .media-system-copy p:not(.eyebrow) {
