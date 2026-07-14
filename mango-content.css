@@ -1825,7 +1825,7 @@
 }
 
 .production-showcase-media.media-wide {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 10;
 }
 
 .production-showcase-media.media-portrait {
@@ -1851,7 +1851,7 @@
 
 .showcase-right {
   position: relative;
-  margin-top: 394px;
+  margin-top: 363px;
 }
 
 .production-showcase-caption {
