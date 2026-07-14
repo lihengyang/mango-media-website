@@ -2231,7 +2231,7 @@
 /* Production page CTA final override */
 
 #contact.production-page-cta.final-cta {
-  width: min(1480px, calc(100vw - 96px)) !important;
+  width: min(1400px, calc(100vw - 48px)) !important;
   max-width: none !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -2331,7 +2331,7 @@
 
 @media (max-width: 900px) {
   #contact.production-page-cta.final-cta {
-    width: min(100% - 28px, 1480px) !important;
+    width: min(100% - 28px, 1400px) !important;
     padding-top: 40px !important;
     padding-bottom: 72px !important;
   }
