@@ -3,141 +3,335 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI Compute Infrastructure | Mango Media</title>
-  <meta name="description" content="Mango Media operates hardware servers for AI model computation, inference, rendering, testing, and creative media processing workloads." />
+
+  <title>Compute | Mango Media</title>
+  <meta
+    name="description"
+    content="Mango Media provides NVIDIA GPU server compute for AI model inference, training, batch jobs, rendering, and production workloads."
+  />
+
+  <meta property="og:title" content="Compute | Mango Media" />
+  <meta
+    property="og:description"
+    content="NVIDIA GPU server compute for AI inference, training, batch processing, rendering, and model workloads."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mangomedia.live/compute.html" />
   <meta name="theme-color" content="#fbfaf7" />
+
   <link rel="stylesheet" href="./mango-soft-lsf-style-v5.css?v=20260709-v7" />
   <link rel="stylesheet" href="./mango-lsf-override.css?v=20260709-v1" />
-  <link rel="stylesheet" href="./mango-content.css?v=20260709-v1" />
+  <link rel="stylesheet" href="./mango-content.css?v=20260710-compute-nvidia1" />
 </head>
+
 <body>
-<header class="site-header">
-  <a class="logo" href="/" aria-label="Mango Media home">
-    <span class="logo-symbol">M</span>
-    <span>Mango Media</span>
-  </a>
+  <header class="site-header">
+    <a class="logo" href="/" aria-label="Mango Media home">
+      <span class="logo-symbol">M</span>
+      <span>Mango Media</span>
+    </a>
 
-  <nav class="nav" aria-label="Main navigation">
-    <a href="/production.html">Production</a>
-    <a href="/models.html">Model Lab</a>
-    <a href="/compute.html">Compute</a>
-    <a href="/about.html">About</a>
-  </nav>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/production.html">Production</a>
+      <a href="/models.html">Model Lab</a>
+      <a href="/compute.html">Compute</a>
+      <a href="/about.html">About</a>
+    </nav>
 
-  <div class="header-actions">
-    <a class="soft-btn" href="mailto:mangomedia.ai@gmail.com">Contact</a>
-    <a class="dark-btn" href="mailto:mangomedia.ai@gmail.com">Start a project</a>
-  </div>
-</header>
+    <div class="header-actions">
+      <a class="soft-btn" href="mailto:mangomedia.ai@gmail.com">Contact</a>
+      <a class="dark-btn" href="mailto:mangomedia.ai@gmail.com">Start a project</a>
+    </div>
+  </header>
 
   <main id="top">
-    <section class="hero subpage-hero">
-      <div class="hero-wash" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <p class="eyebrow">AI Compute Infrastructure</p>
-        <h1>Hardware servers for AI model computation and media processing</h1>
-        <p class="lead">
-          Mango Media supports AI workloads with hardware server resources designed for model processing,
-          inference, rendering, testing, and scalable creative media workflows.
+    <section class="compute-hero">
+      <div class="compute-hero-inner">
+        <p class="eyebrow">Compute</p>
+
+        <h1>NVIDIA GPU servers for AI workloads</h1>
+
+        <p>
+          Mango Media provides NVIDIA-based compute resources for model inference,
+          training, batch processing, rendering, evaluation, and production AI workflows.
         </p>
+
+        <div class="hero-actions compute-actions">
+          <a class="dark-btn large" href="mailto:mangomedia.ai@gmail.com">
+            Discuss compute needs
+          </a>
+          <a class="soft-btn large" href="/models.html">
+            Explore Model Lab
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <a class="back-link" href="/">← Back to home</a>
-      <div class="section-title">
-        <p class="eyebrow">Compute layer</p>
-        <h2>Infrastructure support for AI media workloads</h2>
+    <section class="section compute-quick-section">
+      <div class="compute-section-title">
+        <p class="eyebrow">NVIDIA GPU compute</p>
+        <h2>Run AI workloads on GPU infrastructure built for model execution.</h2>
+      </div>
+
+      <div class="compute-quick-grid">
+        <article class="compute-quick-card">
+          <span>01</span>
+          <h3>Inference</h3>
+          <p>
+            Serve LLMs, multimodal models, image/video generation, embeddings,
+            reranking, and internal model APIs.
+          </p>
+        </article>
+
+        <article class="compute-quick-card">
+          <span>02</span>
+          <h3>Training & fine-tuning</h3>
+          <p>
+            Support LoRA, SFT, checkpoint testing, model adaptation, and
+            experiment workflows on NVIDIA GPU servers.
+          </p>
+        </article>
+
+        <article class="compute-quick-card">
+          <span>03</span>
+          <h3>Batch jobs</h3>
+          <p>
+            Run embeddings, evaluation, dataset processing, generation jobs,
+            rendering tasks, and async model workloads.
+          </p>
+        </article>
+
+        <article class="compute-quick-card">
+          <span>04</span>
+          <h3>Production deployment</h3>
+          <p>
+            Prepare compute paths for APIs, internal tools, media pipelines,
+            and product-facing AI features.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section compute-nvidia-section">
+      <div class="compute-nvidia-panel">
+        <div>
+          <p class="eyebrow">NVIDIA stack</p>
+          <h2>Built around NVIDIA GPU servers and AI software workflows.</h2>
+          <p>
+            Our compute direction is centered on NVIDIA GPU-based servers,
+            with workflows designed around CUDA-compatible model execution,
+            inference optimization, GPU memory planning, and production workload handling.
+          </p>
+        </div>
+
+        <div class="compute-nvidia-stack">
+          <article>
+            <span>CUDA</span>
+            <strong>GPU-accelerated development and model execution environment.</strong>
+          </article>
+
+          <article>
+            <span>TensorRT</span>
+            <strong>Inference optimization path for low-latency and high-throughput deployment.</strong>
+          </article>
+
+          <article>
+            <span>GPU memory</span>
+            <strong>Plan model size, batch size, context length, and throughput requirements.</strong>
+          </article>
+
+          <article>
+            <span>Containers</span>
+            <strong>Run repeatable model environments with dependencies and runtime settings.</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compute-lab-section">
+      <div class="compute-lab-heading">
+        <p class="eyebrow">Quick access</p>
+        <h2>Compute paths for different AI workloads.</h2>
+      </div>
+
+      <div class="compute-access-grid">
+        <article>
+          <h3>Model serving</h3>
+          <p>
+            Deploy model endpoints, internal inference services, and application-facing APIs.
+          </p>
+        </article>
+
+        <article>
+          <h3>Experiment runtime</h3>
+          <p>
+            Test open-source models, frameworks, checkpoints, prompts, and evaluation settings.
+          </p>
+        </article>
+
+        <article>
+          <h3>Rendering and generation</h3>
+          <p>
+            Support image/video generation, media rendering, creative output, and batch generation.
+          </p>
+        </article>
+
+        <article>
+          <h3>Agent and sandbox jobs</h3>
+          <p>
+            Run isolated workloads for agents, tools, code execution, and controlled experiments.
+          </p>
+        </article>
+
+        <article>
+          <h3>Evaluation</h3>
+          <p>
+            Compare models by quality, latency, throughput, stability, and production readiness.
+          </p>
+        </article>
+
+        <article>
+          <h3>Scale planning</h3>
+          <p>
+            Estimate GPU requirements, memory needs, runtime cost, workload duration, and growth path.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section compute-server-section">
+      <div class="compute-server-grid">
+        <div>
+          <p class="eyebrow">Server-first compute</p>
+          <h2>GPU servers for teams that need practical AI execution.</h2>
+          <p>
+            Mango Media’s compute offering is focused on NVIDIA GPU servers rather
+            than generic CPU hosting. The goal is to help teams run heavier AI jobs
+            such as inference, model testing, generation, fine-tuning, and rendering.
+          </p>
+        </div>
+
+        <div class="compute-server-card">
+          <div class="workspace-top">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>gpu-workload.yaml</strong>
+          </div>
+
+          <pre><code>server:
+  gpu: NVIDIA
+  runtime: containerized
+  workload:
+    - inference
+    - fine-tuning
+    - batch
+    - rendering
+
+planning:
+  memory: model-dependent
+  throughput: workload-dependent
+  deployment: API | batch | internal tool</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compute-usecase-section">
+      <div class="compute-section-title centered-home">
+        <p class="eyebrow">Use cases</p>
+        <h2>NVIDIA compute for model, media, and product teams.</h2>
+        <p>
+          Compute can be used independently or connected with Mango Media’s Model Lab
+          and Production workflows.
+        </p>
       </div>
 
       <div class="detail-grid">
         <article class="detail-card">
-          <h3>Model computation</h3>
-          <p>Server resources for running, testing, and processing AI models used in creative production workflows.</p>
-          <ul>
-            <li>Inference workloads</li>
-            <li>Model testing</li>
-            <li>Batch processing support</li>
-          </ul>
+          <span class="number">01</span>
+          <h3>AI product teams</h3>
+          <p>
+            Run inference services, model features, evaluation jobs, and backend AI workloads.
+          </p>
         </article>
 
         <article class="detail-card">
-          <h3>Rendering and generation</h3>
-          <p>Compute support for image, video, and media asset generation where heavier processing is required.</p>
-          <ul>
-            <li>Creative generation tasks</li>
-            <li>Rendering workflows</li>
-            <li>Media processing pipelines</li>
-          </ul>
+          <span class="number">02</span>
+          <h3>Model builders</h3>
+          <p>
+            Test open-source models, fine-tune checkpoints, run batch jobs, and benchmark workflows.
+          </p>
         </article>
 
         <article class="detail-card">
-          <h3>AI workload planning</h3>
-          <p>Help assess what compute setup is needed based on model type, expected volume, speed, and storage requirements.</p>
-          <ul>
-            <li>Workload assessment</li>
-            <li>Server planning</li>
-            <li>Operational support</li>
-          </ul>
+          <span class="number">03</span>
+          <h3>Media workflows</h3>
+          <p>
+            Support AI generation, rendering, video processing, creative automation, and production assets.
+          </p>
         </article>
-      </div>
-
-      <div class="detail-panel">
-        <h3>Connected with production and model work</h3>
-        <p>
-          The compute layer is designed to support the other two Mango Media areas: video production and open-source model workflows.
-          This lets projects move from creative idea to model processing and final output more efficiently.
-        </p>
       </div>
     </section>
 
-    <section class="section final-cta">
+    <section id="contact" class="section final-cta compute-page-cta">
       <div class="container">
         <div class="cta-box">
-          <h2>Discuss AI compute requirements</h2>
-          <p>Contact Mango Media with your model type, workload scale, expected output, and processing requirements.</p>
+          <h2>Plan NVIDIA GPU compute with Mango Media</h2>
+
+          <p>
+            Share the model type, workload, GPU requirement, expected usage, or deployment path.
+            We will help define a practical compute setup.
+          </p>
+
           <div class="hero-actions">
-            <a class="dark-btn large" href="mailto:mangomedia.ai@gmail.com">mangomedia.ai@gmail.com</a>
-            <a class="soft-btn large" href="/production.html">Explore production</a>
+            <a class="dark-btn large" href="mailto:mangomedia.ai@gmail.com">
+              mangomedia.ai@gmail.com
+            </a>
+            <a class="soft-btn large" href="/models.html">Explore Model Lab</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <a class="logo footer-logo" href="/">
-        <span class="logo-symbol">M</span>
-        <span>Mango Media</span>
-      </a>
-      <p>
-        Creative AI production infrastructure for video, models, and compute-backed media workflows.
-      </p>
-    </div>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="/">
+          <span class="logo-symbol">M</span>
+          <span>Mango Media</span>
+        </a>
+        <p>
+          Creative AI production infrastructure for video, models, and compute-backed workflows.
+        </p>
+      </div>
 
-    <div>
-      <strong>Explore</strong>
-      <a href="/production.html">Production</a>
-      <a href="/models.html">Model Lab</a>
-      <a href="/compute.html">Compute</a>
-    </div>
+      <div>
+        <strong>Explore</strong>
+        <a href="/production.html">Production</a>
+        <a href="/models.html">Model Lab</a>
+        <a href="/compute.html">Compute</a>
+      </div>
 
-    <div>
-      <strong>Company</strong>
-      <a href="/about.html">About</a>
-      <a href="mailto:mangomedia.ai@gmail.com">Contact</a>
-      <a href="/">Home</a>
-    </div>
+      <div>
+        <strong>Company</strong>
+        <a href="/about.html">About</a>
+        <a href="mailto:mangomedia.ai@gmail.com">Contact</a>
+        <a href="/">Home</a>
+      </div>
 
-    <div>
-      <strong>Contact</strong>
-      <a href="mailto:mangomedia.ai@gmail.com">mangomedia.ai@gmail.com</a>
-      <span>© <span id="year"></span> Mango Media</span>
+      <div>
+        <strong>Contact</strong>
+        <a href="mailto:mangomedia.ai@gmail.com">mangomedia.ai@gmail.com</a>
+        <span>© <span id="year"></span> Mango Media</span>
+      </div>
     </div>
-  </div>
-</footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <a class="back-top" href="#top" aria-label="Back to top">↑</a>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
