@@ -858,7 +858,7 @@
 /* Model Lab final CTA */
 
 #contact.model-page-cta.final-cta {
-  width: 100% !important;
+  width: min(1400px, calc(100vw - 48px)) !important;
   max-width: none !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -869,7 +869,7 @@
 }
 
 #contact.model-page-cta.final-cta > .container {
-  width: min(1840px, calc(100vw - 48px)) !important;
+  width: 100% !important;
   max-width: none !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -957,12 +957,13 @@
 
 @media (max-width: 900px) {
   #contact.model-page-cta.final-cta {
+    width: min(100% - 28px, 1400px) !important;
     padding-top: 40px !important;
     padding-bottom: 72px !important;
   }
 
   #contact.model-page-cta.final-cta > .container {
-    width: min(100% - 28px, 1840px) !important;
+    width: 100% !important;
   }
 
   #contact.model-page-cta.final-cta .cta-box {
