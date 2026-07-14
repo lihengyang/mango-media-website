@@ -987,6 +987,366 @@
     white-space: normal !important;
   }
 }
+/* Compute page */
+
+.compute-hero {
+  min-height: auto;
+  display: grid;
+  place-items: center;
+  padding: 82px 24px 74px !important;
+  border-top: 0 !important;
+
+  background:
+    radial-gradient(circle at 18% 34%, rgba(185, 198, 255, 0.16), transparent 30rem),
+    radial-gradient(circle at 54% 24%, rgba(255, 214, 230, 0.13), transparent 32rem),
+    radial-gradient(circle at 92% 48%, rgba(232, 213, 180, 0.18), transparent 30rem),
+    linear-gradient(180deg, #fbfaf7 0%, #f7f5ef 100%);
+}
+
+.compute-hero-inner {
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.compute-hero h1 {
+  max-width: 860px;
+  margin: 0 auto 22px;
+  color: #090909;
+  font-size: clamp(40px, 4.8vw, 68px);
+  font-weight: 360;
+  line-height: 1.06;
+  letter-spacing: -0.058em;
+}
+
+.compute-hero p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #77746d;
+  font-size: clamp(16px, 1.15vw, 19px);
+  font-weight: 360;
+  line-height: 1.58;
+  letter-spacing: -0.018em;
+}
+
+.compute-actions {
+  justify-content: center !important;
+  margin-top: 30px !important;
+}
+
+/* Compute shared headings */
+
+.compute-section-title,
+.compute-lab-heading {
+  width: min(1400px, calc(100% - 64px));
+  margin: 0 auto 30px;
+}
+
+.compute-section-title h2,
+.compute-lab-heading h2 {
+  max-width: 820px;
+  margin: 0;
+  color: #090909;
+  font-size: clamp(30px, 3.2vw, 46px);
+  font-weight: 360;
+  line-height: 1.1;
+  letter-spacing: -0.048em;
+}
+
+.compute-section-title p:not(.eyebrow),
+.compute-lab-heading p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 16px 0 0;
+  color: #77746d;
+  font-size: clamp(16px, 1.15vw, 19px);
+  font-weight: 360;
+  line-height: 1.58;
+  letter-spacing: -0.018em;
+}
+
+/* Quick cards */
+
+.compute-quick-section {
+  padding-top: 68px !important;
+  padding-bottom: 66px !important;
+}
+
+.compute-quick-grid {
+  width: min(1400px, calc(100% - 64px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid rgba(9, 9, 9, 0.08);
+  border-left: 1px solid rgba(9, 9, 9, 0.08);
+}
+
+.compute-quick-card {
+  min-height: 245px;
+  padding: 26px;
+  border-right: 1px solid rgba(9, 9, 9, 0.08);
+  border-bottom: 1px solid rgba(9, 9, 9, 0.08);
+  background: rgba(255, 255, 255, 0.56);
+}
+
+.compute-quick-card span {
+  color: #77746d;
+  font-size: 13px;
+  font-weight: 420;
+}
+
+.compute-quick-card h3 {
+  margin: 32px 0 12px;
+  color: #090909;
+  font-size: clamp(18px, 1.45vw, 24px);
+  font-weight: 360;
+  line-height: 1.18;
+  letter-spacing: -0.034em;
+}
+
+.compute-quick-card p {
+  margin: 0;
+  color: #77746d;
+  font-size: clamp(15px, 1.02vw, 17px);
+  font-weight: 360;
+  line-height: 1.55;
+  letter-spacing: -0.018em;
+}
+
+/* NVIDIA stack panel */
+
+.compute-nvidia-section {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+.compute-nvidia-panel {
+  width: min(1400px, calc(100% - 64px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(420px, 1fr);
+  gap: clamp(42px, 5vw, 76px);
+  align-items: start;
+
+  border: 1px solid rgba(9, 9, 9, 0.075);
+  border-radius: 34px;
+  padding: clamp(34px, 5vw, 58px);
+
+  background:
+    radial-gradient(circle at 8% 30%, rgba(118, 255, 120, 0.10), transparent 28rem),
+    radial-gradient(circle at 52% 22%, rgba(185, 198, 255, 0.10), transparent 30rem),
+    radial-gradient(circle at 90% 70%, rgba(232, 213, 180, 0.15), transparent 28rem),
+    linear-gradient(135deg, #ffffff 0%, #f8f7f3 52%, #f1efe8 100%);
+  box-shadow: 0 22px 70px rgba(9, 9, 9, 0.055);
+}
+
+.compute-nvidia-panel h2 {
+  max-width: 720px;
+  margin: 0 0 18px;
+  color: #090909;
+  font-size: clamp(30px, 3.2vw, 46px);
+  font-weight: 360;
+  line-height: 1.1;
+  letter-spacing: -0.048em;
+}
+
+.compute-nvidia-panel p {
+  max-width: 700px;
+  margin: 0;
+  color: #77746d;
+  font-size: clamp(16px, 1.15vw, 19px);
+  line-height: 1.58;
+  letter-spacing: -0.018em;
+}
+
+.compute-nvidia-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.compute-nvidia-stack article {
+  border: 1px solid rgba(9, 9, 9, 0.07);
+  border-radius: 22px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: 0 12px 34px rgba(9, 9, 9, 0.035);
+}
+
+.compute-nvidia-stack span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  padding: 7px 11px;
+  background: #e6f7df;
+  color: #21401f;
+  font-size: 13px;
+  font-weight: 420;
+}
+
+.compute-nvidia-stack strong {
+  display: block;
+  color: #090909;
+  font-size: clamp(18px, 1.35vw, 22px);
+  font-weight: 360;
+  line-height: 1.18;
+  letter-spacing: -0.034em;
+}
+
+/* Quick access */
+
+.compute-lab-section {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+.compute-access-grid {
+  width: min(1400px, calc(100% - 64px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.compute-access-grid article {
+  min-height: 210px;
+  border: 1px solid rgba(9, 9, 9, 0.08);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 24px;
+}
+
+.compute-access-grid h3 {
+  margin: 0 0 12px;
+  color: #090909;
+  font-size: clamp(18px, 1.45vw, 24px);
+  font-weight: 360;
+  line-height: 1.18;
+  letter-spacing: -0.034em;
+}
+
+.compute-access-grid p {
+  margin: 0;
+  color: #77746d;
+  font-size: clamp(15px, 1.02vw, 17px);
+  font-weight: 360;
+  line-height: 1.55;
+  letter-spacing: -0.018em;
+}
+
+/* Server section */
+
+.compute-server-section {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+.compute-server-grid {
+  width: min(1400px, calc(100% - 64px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1fr);
+  gap: clamp(42px, 5vw, 76px);
+  align-items: center;
+}
+
+.compute-server-grid h2 {
+  max-width: 720px;
+  margin: 0 0 18px;
+  color: #090909;
+  font-size: clamp(30px, 3.2vw, 46px);
+  font-weight: 360;
+  line-height: 1.1;
+  letter-spacing: -0.048em;
+}
+
+.compute-server-grid p {
+  max-width: 680px;
+  margin: 0;
+  color: #77746d;
+  font-size: clamp(16px, 1.15vw, 19px);
+  line-height: 1.58;
+}
+
+.compute-server-card {
+  overflow: hidden;
+  border: 1px solid rgba(9, 9, 9, 0.08);
+  border-radius: 30px;
+  background: #111111;
+  color: #ffffff;
+  box-shadow: 0 22px 66px rgba(9, 9, 9, 0.08);
+}
+
+.compute-server-card pre {
+  margin: 0;
+  padding: clamp(24px, 3.2vw, 36px);
+  white-space: pre-wrap;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Use cases and CTA */
+
+.compute-usecase-section {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+.compute-page-cta {
+  padding-top: 44px !important;
+}
+
+@media (max-width: 1100px) {
+  .compute-quick-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .compute-nvidia-panel,
+  .compute-server-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compute-access-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .compute-server-card {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 720px) {
+  .compute-hero {
+    padding: 68px 20px 58px !important;
+  }
+
+  .compute-section-title,
+  .compute-lab-heading,
+  .compute-quick-grid,
+  .compute-nvidia-panel,
+  .compute-access-grid,
+  .compute-server-grid {
+    width: min(100% - 28px, 1400px);
+  }
+
+  .compute-quick-grid,
+  .compute-access-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compute-quick-card,
+  .compute-access-grid article {
+    min-height: auto;
+  }
+
+  .compute-nvidia-panel {
+    border-radius: 28px;
+    padding: 28px 22px;
+  }
+}
 /* Production page */
 
 .section.production-intro {
