@@ -1358,7 +1358,7 @@
 /* Compute final CTA */
 
 #contact.compute-page-cta.final-cta {
-  width: 100% !important;
+width: min(1400px, calc(100vw - 48px)) !important;
   max-width: none !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -1369,7 +1369,7 @@
 }
 
 #contact.compute-page-cta.final-cta > .container {
-  width: min(1840px, calc(100vw - 48px)) !important;
+width: 100% !important;
   max-width: none !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -1473,14 +1473,15 @@
     width: min(100% - 32px, 1500px);
   }
 
-  #contact.compute-page-cta.final-cta {
-    padding-top: 40px !important;
-    padding-bottom: 72px !important;
-  }
+#contact.compute-page-cta.final-cta {
+  width: min(100% - 28px, 1400px) !important;
+  padding-top: 40px !important;
+  padding-bottom: 72px !important;
+}
 
-  #contact.compute-page-cta.final-cta > .container {
-    width: min(100% - 28px, 1840px) !important;
-  }
+#contact.compute-page-cta.final-cta > .container {
+  width: 100% !important;
+}
 
   #contact.compute-page-cta.final-cta .cta-box {
     min-height: auto !important;
