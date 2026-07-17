@@ -3065,6 +3065,12 @@
   padding-top: 68px !important;
   padding-bottom: 68px !important;
 }
+@media (min-width: 901px) {
+  .compute-usecase-section .compute-section-title h2 {
+    max-width: 1120px !important;
+    white-space: nowrap;
+  }
+}
 
 /* Compute final CTA */
 
