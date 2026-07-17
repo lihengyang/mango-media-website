@@ -1376,6 +1376,68 @@
     border-radius: 22px;
   }
 }
+/* Homepage Model Lab text-only review card */
+
+.home-model-lab-card-review {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.82fr);
+  gap: clamp(24px, 3vw, 42px);
+  align-items: center;
+  min-height: 330px;
+}
+
+.home-model-lab-card-review .home-model-lab-copy {
+  max-width: 520px;
+}
+
+.home-model-lab-review-list {
+  display: grid;
+  gap: 12px;
+}
+
+.home-model-lab-review-list article {
+  border: 1px solid rgba(9, 9, 9, 0.07);
+  border-radius: 22px;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 10px 28px rgba(9, 9, 9, 0.035);
+}
+
+.home-model-lab-review-list strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #090909;
+  font-size: clamp(16px, 1.05vw, 18px);
+  font-weight: 390;
+  line-height: 1.2;
+  letter-spacing: -0.026em;
+}
+
+.home-model-lab-review-list span {
+  display: block;
+  color: #77746d;
+  font-size: 14.5px;
+  line-height: 1.48;
+  letter-spacing: -0.018em;
+}
+
+@media (max-width: 1050px) {
+  .home-model-lab-card-review {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .home-model-lab-card-review {
+    gap: 18px;
+  }
+
+  .home-model-lab-review-list article {
+    border-radius: 18px;
+    padding: 16px;
+  }
+}
 /* Homepage Mango stack layout */
 
 .home-mango-stack {
