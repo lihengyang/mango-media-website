@@ -3813,6 +3813,130 @@ width: 100% !important;
     white-space: normal !important;
   }
 }
+/* Homepage NVIDIA compute visual card */
+
+.home-capability-nvidia-slot.home-compute-nvidia-card {
+  position: relative;
+  overflow: hidden;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 320px;
+  border: 0 !important;
+  border-radius: 28px;
+  padding: clamp(28px, 3vw, 42px);
+  color: #ffffff;
+
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255, 189, 42, 0.92), transparent 18rem),
+    radial-gradient(circle at 82% 18%, rgba(33, 42, 38, 0.82), transparent 20rem),
+    radial-gradient(circle at 70% 78%, rgba(130, 45, 12, 0.96), transparent 22rem),
+    linear-gradient(135deg, #f7a51a 0%, #442512 52%, #1a120e 100%) !important;
+
+  box-shadow:
+    0 24px 68px rgba(9, 9, 9, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.home-capability-nvidia-slot.home-compute-nvidia-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background:
+    repeating-radial-gradient(
+      circle at 50% 50%,
+      rgba(255, 255, 255, 0.045) 0,
+      rgba(255, 255, 255, 0.045) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+
+  opacity: 0.42;
+  mix-blend-mode: overlay;
+}
+
+.home-compute-nvidia-brand,
+.home-compute-nvidia-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.home-compute-nvidia-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  font-size: clamp(24px, 2.2vw, 36px);
+  font-weight: 760;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.home-compute-nvidia-brand span {
+  display: inline-flex !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
+  text-align: left !important;
+}
+
+.home-compute-nvidia-mark {
+  position: relative;
+  width: 38px;
+  height: 26px;
+  border: 3px solid #ffffff;
+  border-radius: 16px 6px 16px 6px;
+  transform: skew(-12deg);
+}
+
+.home-compute-nvidia-mark::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  border: 3px solid #ffffff;
+  border-radius: 999px;
+}
+
+.home-compute-nvidia-copy {
+  max-width: 520px;
+}
+
+.home-compute-nvidia-copy h3 {
+  max-width: 520px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(24px, 2.25vw, 38px);
+  font-weight: 360;
+  line-height: 1.14;
+  letter-spacing: -0.045em;
+}
+
+.home-compute-nvidia-copy p {
+  max-width: 520px;
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: 1.5;
+  letter-spacing: -0.018em;
+}
+
+@media (max-width: 900px) {
+  .home-capability-nvidia-slot.home-compute-nvidia-card {
+    min-height: 280px;
+    border-radius: 24px;
+    padding: 28px;
+  }
+}
 /* Mobile consistency layer */
 
 @media (max-width: 760px) {
